@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Akshat Bhardwaj - portfolio</title>
+</head>
+
+<body>
+
+    <header class="header">
+          <a href="#home" class="logo">Akshat Bhardwaj</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonial">Testimonial</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="akshatphoto.jpg" alt="Akshat Image">
+        </div>
+
+
+        <div class="home-content">
+            <h3>Hello,Myself</h3>
+            <h1>Akshat Bhardwaj</h1>
+            <h3>and I'M a <span class="multiple-text"></span></h3>
+            <p>Results-driven Full-Stack Developer with expertise in  Node.js, Express.js, and MongoDB,
+                specializing in scalable web applications, RESTful APIs, and database optimization. </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/akshat-bhardwaj-277b2b36b/" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a href="https://github.com/Bhardwaj-Akshat" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-github'></i>
+                    <a href="" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class='bx bxl-facebook'></i>
+                        <a href="https://www.instagram.com/bharadwaj__akshat_/" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+
+            </div>
+            <a href="resume akshattt.pdf" class="btn" download>Download CV</a>
+
+        </div>
+    </section>
+
+    <!-- about section code -->
+    <!-- about section code -->
+<section class="about" id="about">
+    <div class="about-content">
+        <h2 class="heading">About<span>Me</span></h2>
+        <h3>I'm a <span>Full stack Developer</span> </h3>
+
+        <p id="about-short">
+            I am a passionate Full-Stack Developer with a focus on building high-performance, secure, and scalable
+            web applications. I specialize in React.js, Node.js, Express.js, and MongoDB, and bring a strong
+            understanding of backend systems, UI/UX, and clean code architecture.
+        </p>
+
+        <div id="about-full" style="display: none;">
+            <p>
+                I am Akshat Bhardwaj, a results-driven and passionate Full-Stack Developer specializing in building robust,
+                scalable, and user-centric web applications. With a strong command of modern technologies like React.js,
+                Node.js, Express.js, and MongoDB, I bring both front-end finesse and back-end strength to every project
+                I undertake. I thrive in dynamic environments where clean code, system performance, and user experience
+                are paramount.
+            </p>
+            <p>
+                Currently pursuing a B.Tech in Computer Science & Engineering, I have consistently demonstrated a deep
+                understanding of Data Structures and Algorithms (DSA), which helps me write optimized, efficient
+                solutions. My academic journey has been complemented by hands-on experience in real-world projects,
+                including a Wonderlust , problem-solving skills and focus on practical impact.
+            </p>
+            
+            <p>
+                I follow Agile development practices, enjoy collaborating with teams, and continuously seek
+                opportunities to learn new technologies. Whether its crafting engaging UI/UX with Tailwind CSS or
+                ensuring backend efficiency with optimized database queries, I strive to build applications that are not
+                just functional but also delightful to use.
+            </p>
+            <p>
+                Outside of coding, I enjoy diving into the latest trends in tech, contributing to open-source when
+                possible, and exploring ways to apply software engineering to solve everyday challenges. i am excited to
+                grow in environments that value innovation, collaboration, and impact-driven development.
+            </p>
+        </div>
+
+        <a href="javascript:void(0);" class="btn" onclick="toggleAbout(this)">Read More</a>
+    </div>
+
+    <div class="about-img">
+        <img src="pop.jpg" alt="Akshat Image">
+    </div>
+</section>
+
+    <!-- service section code  -->
+
+    <section class="Services" id="services">
+        <h2 class="heading">My<span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code"></i>
+                <h3>Software Development</h3>
+                <p>Results-driven Full-Stack Developer with expertise in React.js, Node.js, Express.js, and MongoDB,
+                    specializing in scalable web applications, RESTful APIs, and database optimization.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-palette"></i>
+                <h3>UI/UX Design</h3>
+                <p>Results-driven Full-Stack Developer with expertise in React.js, Node.js, Express.js, and MongoDB,
+                    specializing in scalable web applications, RESTful APIs, and database optimization.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bxl-android"></i>
+                <h3>App Development</h3>
+                <p>Results-driven Full-Stack Developer with expertise in React.js, Node.js, Express.js, and MongoDB,
+                    specializing in scalable web applications, RESTful APIs, and database optimization.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Projects Section -->
+<!-- <section class="projects" id="projects">
+    <h2 class="heading">My <span>Projects</span></h2>
+
+    <div class="projects-container">
+        <div class="project-box">
+            <img src="asset/wonderlust.png" alt="Project 1 Screenshot">
+            <h3>Wanderlust – Travel Booking Platform (MERN Stack)</h3>
+            <p>A full-stack Airbnb-inspired web app built using MERN.
+              Key features: user/host authentication, property listing with images via Cloudinary, interactive maps with Mapbox, and CRUD functionality for hosts.</p>
+            <span>Tech Stack: Node.js, Express, MongoDB, EJS</span>
+            <div class="project-links">
+                <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <img src="asset/expense.png" alt="Project 2 Screenshot">
+            <h3>Expense Analysis Tool</h3>
+            <p> Expense Analysis Tool – A desktop personal finance tracker built with Python and Tkinter,
+                 featuring CRUD operations and filtering by category and date.
+             </p>
+            <span>Python ,Tkinter,SQL</span>
+            <div class="project-links">
+                <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="project-box">
+            <img src="asset/portfolio.png" alt="Project 3 Screenshot">
+            <h3>portfolio Website</h3>
+            <p>Designed and developed a responsive, user-friendly portfolio website using 
+                HTML, CSS, and JavaScript.
+               Showcases projects, skills, and contact information with smooth navigation and clean layout.</p>
+            <span>Tech Stack: HTML5, CSS, JavaScript, Bootstrap, Tailwind CSS. </span>
+            <div class="project-links">
+                <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="" target="_blank"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+    <!-- testimonial code  -->
+    <section class="testimonial-box" id="testimonial">
+        <div class="testimonial-box">
+            <h2 class="heading">Testimonial</h2>
+            <div class="wrapper">
+                <div class="testimonial-item">
+                    <img src="amanphoto.jpg" alt="">
+                    <h2>Aman</h2>
+                    <div class="rating">
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                    </div>
+                    <p>Awesome job on all of your projects :smile:</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="dharamphoto.jpg" alt="">
+                    <h2>Dharam</h2>
+                    <div class="rating">
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                    </div>
+                    <p>The scrolling effects and UI animations in his projects are beautifully implemented and perform
+                        smoothly.</p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="prabalphoto.jpg" alt="">
+                    <h2>Prabal</h2>
+                    <div class="rating">
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                        <i class="bx bxs-star" id="star"></i>
+                    </div>
+                    <p>Incredible work! Akshat’s coding skills and professionalism really stand out on every project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section code  -->
+
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>Me</span></h2>
+
+        <from action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" name="Email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone number">
+                <input type="text" placeholder="Email subject">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </from>
+    </section> -->
+
+    <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="https://formsubmit.co/aniketmaurya8318@gmail.com" method="POST">
+        <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-box">
+            <input type="text" name="phone" placeholder="Phone Number">
+            <input type="text" name="subject" placeholder="Email Subject">
+        </div>
+        <textarea name="message" rows="10" placeholder="Your Message" required></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://your-portfolio-url.com/thankyou.html">
+
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/akshat-bhardwaj-277b2b36b/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+
+            <a href="https://github.com/Bhardwaj-Akshat" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github'></i>
+                <a href="" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class='bx bxl-facebook'></i>
+                    <a href="https://www.instagram.com/bharadwaj__akshat_/" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class='bx bxl-instagram'></i>
+        </div>
+        <p class="copyright">
+            &copy; Akshat Bhardwaj - All Right Reserved
+        </p>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+    function toggleAbout(button) {
+        const fullText = document.getElementById("about-full");
+        if (fullText.style.display === "none") {
+            fullText.style.display = "block";
+            button.innerText = "Read Less";
+        } else {
+            fullText.style.display = "none";
+            button.innerText = "Read More";
+        }
+    }
+</script>
+
+</body>
+
+</html>
